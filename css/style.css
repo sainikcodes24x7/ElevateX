@@ -184,18 +184,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
+ 
 
-#intro p {
-  width: 80%;
+#para  {
+  width: 80%; 
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
 @media (min-width: 1024px) {
-  #intro p {
+  #para {
     width: 60%;
   }
-}
+} 
 
 #intro .carousel-fade .carousel-inner .carousel-item {
   -webkit-transition-property: opacity;
