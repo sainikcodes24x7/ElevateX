@@ -1,68 +1,1102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Particle Distortion</title>
-    <link rel="stylesheet" href="style65.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>www.elevateX.com</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <style>
-       
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <style>
+    .styled {
+      border: 0;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 10px;
+      background-color: rgba(220, 0, 0, 1);
+      background-image: linear-gradient(to top left,
+          rgba(0, 0, 0, .2),
+          rgba(0, 0, 0, .2) 30%,
+          rgba(0, 0, 0, 0));
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+      background-color: rgba(255, 0, 0, 1);
+    }
+
+    .styled:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+    #button-anon-pen:hover {
+    -webkit-animation: play 1.6s ease-in infinite;
+}
+
+#button-anon-pen span {
+    padding: 14px 0;
+    font-size: 22px;
+    display: block;
+    margin: 3px;
+    background: #000;
+    border-radius: 3px;
+}
+
+@-webkit-keyframes play {
+    0% {
+        background-position: 0px;
+    }
+    20% {
+        background-position: -110px;
+    }
+    35% {
+        background-position: -180px;
+    }
+    50% {
+        background-position: -210px;
+    }
+    80% {
+        background-position: -350px;
+    }
+    100% {
+        background-position: -390px;
+    }
+}
+    /* h2{
+    position: relative;
+    margin: 20px;
+    font-size: 4em;
+    font-weight: 900;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color:blue;
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-                align-items: center;
-                justify-content: center;
-                margin-left: 35%;
-                /* position: relative; */
+    z-index: 1;
+    overflow: hidden;
+}
+h2:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%);
+    animation: animate 4.2s linear forwards;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0%
+    {
+        left: 110%
+    }
+    100%
+    {
+        left: -20%
+    }
+}
+h2 span{
+    color: aquamarine;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+} */
+.presents h2 {
+    font-size: 2.8vw;
+    animation: flicker 1.5s infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: flicker;
+    color: red;
 }
 
-.styled:hover {
-    background-color: rgb(0, 255, 98);
-}
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-
-    </style>
+  </style>
 </head>
+
 <body>
-    <video src="videoplayback.mp4" muted="" autoplay="" loop></video>
-    <div>
-    <h2 style="font-family: 'Ephesis', cursive;"><span style="font-family:'Times New Roman', Times, serif;">WELCOME &nbsp;</span>TO &nbsp;<span style="color: rgb(219, 180, 51);">ELEVATE</span>X</h2>
-    <br>
-    <button class="favorite styled"
-    type="button"> <a href="index.html" style="color: white; text-decoration: none;  " >HOME PAGE</a> </button> 
-</div>
-<br>
-<hr style="color: white;">
-<br>
-<div>
-    <!-- <button class="favorite styled"
-    type="button"> <a href="https://www.youtube.com/" style="color: white; text-decoration: none;" >HOME PAGE</a> </button> -->
-</div>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <!-- <h1><a href="#intro" class="scrollto">BizPage</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <img src="img/Elevate.jpeg"
+          style="height: 63px;width: 158px;padding-top: 0px;margin-left: -30px;margin-top: -16px;" alt="" title="">
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#featured-services">Event</a></li>
+          <li><a href="#services">Tracks</a></li>
+          <li><a href="#team">Register</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active"
+          
+            style="background-image: url('https://humanativaspa.it/wp-content/uploads/2021/05/HN_machine_learning_ist.jpg');">
+            
+            <div class="carousel-container">
+              
+              <div class="carousel-content">
+                <!-- <video src="videoplayback.mp4" muted="" autoplay=""></video> -->
+                <!-- <h2 class="presents"><span>IEEE &nbsp;</span>JU &nbsp;<span>IAS &nbsp;</span>CHAPTER &nbsp;</h2> -->
+                <h2 class="presents">IEEE JU IAS CHAPTER</h2>
+                <h3 style="color: yellow;">PRESENTS</h3>
+                <center>
+                  <p><img src="img/Elevate.jpeg" style="width: 500px; height: 217px;" alt=""> </p>
+                </center>
+                <a href="#featured-services" class="btn-get-started scrollto" style=" background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);color: black; overflow: hidden;" id="button-anon-pen" >REGISTER</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style="background-image: url('https://www.xilinx.com/content/dam/xilinx/imgs/post/webinar/tiger-830x460.jpeg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 style="color: aquamarine;">UPSCALE, UPSOLVE, UPGRADE</h2>
+                <p id="para" style="color: aquamarine;">Jadavpur University IEEE student branch hosted 'ElevateX', a series of
+                  sessions for students in an
+                  attempt to provide them an all-in-one mentoring session by professionals and students adept in their
+                  respective fields. The amount of approbation received, great turnout and feedback from students
+                  confirmed the success of this session. </p>
+                  <a href="#featured-services" class="btn-get-started scrollto" style=" background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);color: black; overflow: hidden;" id="button-anon-pen" >REGISTER</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-item" style="background-image: url('img/intro-carousel/3.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Temporibus autem quibusdam</h2>
+                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('img/intro-carousel/4.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Nam libero tempore</h2>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('img/intro-carousel/5.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Magnam aliquam quaerat</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>As one of the oldest universities of the country, Jadavpur University, and its students have a certain duty
+            - the duty to give back to society across all disciplines and inculcate the habit of thinking in every
+            individual who comes along. The IEEE Jadavpur University Student Branch is one little endeavor in that
+            process. Founded in 2010, we belong to the Kolkata section of Region 10 of the organization. One of the most
+            active student branches in our section, we are dedicated to furthering technical and entrepreneurial
+            innovations through hands-on interactive sessions. With large scale events and intimate, basic workshops, we
+            try to keep something happening all year round - so that the fire of knowledge, learning and innovation
+            never burns out. In this process of sharing our love for technology, we have slowly grown, met new people,
+            evolved as a group and built around us, a community of like-minded individuals who are driven by a passion
+            for learning and giving back to society.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="1.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Advancing Technology for Humanity and ensuring a true bond of commitment towards a better future.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="3.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+                Creating a platform where students would get a chance to interact with researchers and industrial people
+                in the respective fields of their interest
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="2.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                Conducting various events like seminars, workshops, paper presentations, and tech quizzes, where
+                students work, cooperate, coordinate and compete to, develop their intellectual as well as professional
+                skills
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <section id="featured-services">
+      <div class="container">
+        <h1 style="text-align: center;color: lightskyblue;padding-top: 47px;">ABOUT THE EVENT</h1>
+        <p style="color: aquamarine;">ElevateX is an all-in-one mentoring session by IEEE JU SB members. Be it research
+          or industry, be it competitive coding, electronics or soft skill development, we have tracks tailor-made for
+          your needs, complete with doubt-clearing, quick contests, real-world problems and webinars by field experts.
+          While you’re stuck in the middle of a pandemic, locked up at home, this is our way of helping you engage
+          yourself in something productive!</p>
+        <div class="row">
+
+          <div class="col-lg-4 box">
+
+            <!-- <i class="ion-ios-bookmarks-outline"></i> -->
+            <img src="img/loan.png" alt="">
+            <h4 class="title"><a href="">Free of Cost</a></h4>
+
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <!-- <i class="ion-ios-stopwatch-outline"></i> -->
+            <img src="img/platform.png" alt="">
+            <h4 class="title"><a href="">Online Platform Based</a></h4>
+
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <!-- <i class="ion-ios-stopwatch-outline"></i> -->
+            <img src="img/com.png" alt="">
+            <h4 class="title"><a href="">One-to-One Mentorship</a></h4>
+
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <!-- <i class="ion-ios-stopwatch-outline"></i> -->
+            <img src="img/rev.png" alt="">
+            <h4 class="title"><a href="">Webinars by Industrial Experts</a></h4>
+
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <!-- <i class="ion-ios-stopwatch-outline"></i> -->
+            <img src="img/learning.png" alt="">
+            <h4 class="title"><a href="">Brainstorming Sessions</a></h4>
+
+          </div>
+
+          <div class="col-lg-4 box">
+            <img src="img/rout.png" alt="">
+            <h4 class="title"><a href="">Sessional Competitions</a></h4>
+
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Tracks</h3>
+          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p> -->
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Higher Education and Research</a></h4>
+            <p class="description">However intimidating the thought maybe, we are expected to figure out what we wish to
+              do for the rest of our lives, in the first few years of college itself. For many of us, higher education
+              in a good university is a dream, fuelled by our passion for learning. They say the first step to this is
+              taking part in good research projects in our undergraduate years. Conducted by the ones who have ‘been
+              there, done that’, this session aims to answer all your doubts, bust some myths and take you closer to
+              your dreams.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Software, Programming, Competitive Coding</a></h4>
+            <p class="description">Congratulations on choosing tech as a profession at a time when it is at its most
+              dynamic stage. There is so much happening all around, and programming is not about sitting at a desk and
+              typing codes all your life anymore. This is a powerful tool and needs to be mastered by you. Jump on, and
+              we’ll ensure that you’re a part of the team that’ll build the future.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp"  data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Electronics</a></h4>
+            <p class="description">Have you fallen in love with circuits and breadboards? Do you find yourself to be the
+              happiest while you’re solving Kirchoff’s Law or tinkering with BJTs? Hold on, for there’s a lot more in
+              store for you. Sharpen your skills, meet people who share your interest and explore the bigger world!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Soft Skills and Interview Experience</a></h4>
+            <p class="description">You may not know this yet, but the one factor determining your professional and
+              personal success (and the balance in between), above your IQ and technical expertise, is how much you’re
+              adept at soft skills. How you face an interview panel, how you sign off a mail, how you talk to a
+              colleague - little things that speak volumes about you. Let’s be honest here - a crash course doesn’t
+              change you overnight. But gift yourself a good start, for the process will belong. We shall tell you where
+              the problem lies, and how you can begin to correct yourself.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp"  data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Past Year</a></h4>
+            <p class="description">Number of applicants: 100+</p>
+            <p class="description">Number of selected applicant: 40+</p>
+            <p class="description">Number of mentors: 10</p>
+          
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3 style="color: rgb(3, 45, 87);">HURRY UP GUYS !!!</h3>
+        <p style="color: black;"> <b> Register now for ElevateX to learn and experience more.</b></p>
+        <a class="cta-btn" href="#">REGISTER NOW!!!</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <!-- <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Skills</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">CSS <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <!-- <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>
+
+        <div class="facts-img">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section>#facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <!-- <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Portfolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>SPONSERS</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="https://pbs.twimg.com/profile_images/1212398116101472257/VVvZ_m4A_400x400.png"
+            style="cursor: pointer; height: 180px; width: 150px;" alt="">
+          <img src="img/prepbytes.png" style="height: 175px;width: 150px; cursor: pointer;" alt="">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C560BAQEFehbgW6TwDQ/company-logo_200_200/0/1587645169726?e=2159024400&v=beta&t=fHFBuqw7NWelmciSUna9e7u00DD8xk6VUfS-fwFZ_hM"
+            alt="">
+          <img src="https://files.codingninjas.in/0000000000000723.jpg" alt="">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4E0BAQFKoiD0z5di3g/company-logo_200_200/0/1519902218409?e=2159024400&v=beta&t=BeSzEF4vRasKPiAq8H6j9PsjIXOD_AJuQMz7VVrx4lY"
+            alt="">
+          <img src="img/sb1.png" style="width: 150px;height: 180px;" alt="">
+          <!-- <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt=""> -->
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!-- <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Speakers</h3>
+          <p>Our respected speakers whose contributions are immense in the event.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="Roshan Mishra.jpg" style="height: 250px;" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Roshan Mishra</h4>
+                  <span>MSc MTEC at ETH Zurich</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="Sanghoti Adak.jpg" style="height: 250px;" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sanghoti Adak</h4>
+                  <span>System Reliability Engineer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="Shantanu Shubham.jpg" style="height: 250px;" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shantanu Shubham</h4>
+                  <span>SDE at Schlumberger</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="Navdeep Sandhu.jpg" style="height: 250px;" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Navdeep Sandhu</h4>
+                  <span>Instructor and Content Developer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Feel free to contact us anytime regarding any query.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>Address: 88, Raja SC Mullick Road, Kolkata 700032</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">(+91) 8479808755 / (+91) 8945862011</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:jaduniv.ieee@gmail.com">jaduniv.ieee@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div> -->
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3><img src="img/sb1.png" style="width: 175px; height: 75px;" alt=""> </h3>
+            <p>The Jadavpur University IEEE student branch, founded in 2010, belongs to the Kolkata section of Region 10
+              of the organization. We are a group of enthusiastic students who are promoting innovative ideas both
+              within and outside the campus.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Event</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Tracks</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Register</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Jadavpur University
+              188, Raja S.C. Mallick Rd, Kolkata-700032
+              India <br>
+              <strong>Phone:</strong> (+91) 8479808755<br>
+              <strong>Email:</strong> jaduniv.ieee@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="social-links">
+            <h2>CONNECT US AT:-</h2>
+            <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+
+
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong< /strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Best <a href="https://bootstrapmade.com/"></a>Made with <i class="ion-ios-heart-outline"></i> by Technical
+        Team,IEEE,JU
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
