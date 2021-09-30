@@ -1,5 +1,3 @@
-<!--This is official website of ElevateX 2.0 using html, js, bootstrap-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +61,65 @@
       box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
         inset 2px 2px 3px rgba(0, 0, 0, .6);
     }
+
+    /* h2{
+    position: relative;
+    margin: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+h2:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%);
+    animation: animate 4.2s linear forwards;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0%
+    {
+        left: 110%
+    }
+    100%
+    {
+        left: -20%
+    }
+}
+h2 span{
+    color: aquamarine;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+} */
+.presents h2 {
+    font-size: 2.8vw;
+    animation: flicker 1.5s infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: flicker;
+    color: red;
+}
+
   </style>
 </head>
 
@@ -115,10 +172,15 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active"
+          
             style="background-image: url('https://humanativaspa.it/wp-content/uploads/2021/05/HN_machine_learning_ist.jpg');">
+            
             <div class="carousel-container">
+              
               <div class="carousel-content">
-                <h2 style="color: aquamarine;">IEEE JU IAS CHAPTER</h2>
+                <!-- <video src="videoplayback.mp4" muted="" autoplay=""></video> -->
+                <!-- <h2 class="presents"><span>IEEE &nbsp;</span>JU &nbsp;<span>IAS &nbsp;</span>CHAPTER &nbsp;</h2> -->
+                <h2 class="presents">IEEE JU IAS CHAPTER</h2>
                 <h3 style="color: yellow;">PRESENTS</h3>
                 <center>
                   <p><img src="img/Elevate.jpeg" style="width: 500px; height: 217px;" alt=""> </p>
