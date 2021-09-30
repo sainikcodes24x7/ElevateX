@@ -11,7 +11,9 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    /* background-image: url('https://elements-twenty20-photos-0.imgix.net/production/uploads/items/762a99f9-63cf-4970-ab54-c5e71968160b/source?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1200&s=aca3bd2f2e935731faad7db6220df211'); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h2{
     position: relative;
@@ -29,9 +31,9 @@ h2:before{
     width: 120%;
     height: 100%;
     background: linear-gradient(90deg,transparent 0%, #000 5%, #000 100%);
-    /* animation: animate 4.2s linear forwards;
-    animation-delay: 1.9s;
-    animation-iteration-count: infinite; */
+     /* animation: animate 3.5s linear forwards;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;  */
 }
 @keyframes animate{
     0%
@@ -56,5 +58,6 @@ video{
     z-index: 2;
     pointer-events: none;
     mix-blend-mode: screen;
+    
     
 }
