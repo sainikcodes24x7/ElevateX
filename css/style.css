@@ -29,7 +29,7 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -94,8 +94,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #header #logo {
     padding-left: 60px;
-  }
+      }
 }
+/* @media (max-width:768px){
+  #header #logo {
+    height: 63px;
+  }
+} */
 
 #header #logo h1 {
   font-size: 34px;
@@ -172,11 +177,41 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#intro h2 {
+@keyframes flicker {
+  0%,
+  20%,
+  40%,
+  50%,
+  85%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0088f7,
+      0 0 80px #0088f7, 0 0 90px #0088f7, 0 0 100px #0088f7, 0 0 150px #0088f7;
+  }
+  15%,
+  30%,
+  75%,
+  95% {
+    text-shadow: none;
+    transition: all 0.5s;
+  }
+}
+
+#intro h2{
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  font-size: 2.8vw;
+  animation: flicker 1.5s infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: flicker;
+    
 }
 
 @media (max-width: 768px) {
