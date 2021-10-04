@@ -61,9 +61,9 @@
       box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
         inset 2px 2px 3px rgba(0, 0, 0, .6);
     }
-    #button-anon-pen:hover {
-    -webkit-animation: play 1.6s ease-in infinite;
-}
+    /* #button-anon-pen:hover {
+    -webkit-animation: play 1.6s ease-in infinite; */
+
 
 #button-anon-pen span {
     padding: 14px 0;
@@ -74,7 +74,7 @@
     border-radius: 3px;
 }
 
-@-webkit-keyframes play {
+/* @-webkit-keyframes play {
     0% {
         background-position: 0px;
     }
@@ -93,7 +93,7 @@
     100% {
         background-position: -390px;
     }
-}
+} */
     /* h2{
     position: relative;
     margin: 20px;
@@ -175,8 +175,8 @@ video{
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#featured-services">Event</a></li>
-          <li><a href="#services">Tracks</a></li>
-          <li><a href="#team">Register</a></li>
+          <!-- <li><a href="#services">Tracks</a></li> -->
+          <!-- <li><a href="#team">Register</a></li> -->
           <li><a href="#contact">Contact Us</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -217,7 +217,7 @@ video{
                 <center>
                   <p><img src="img/Elevate.jpeg" style="width: 500px; height: 217px;" alt=""> </p>
                 </center>
-                <a href="#featured-services" class="btn-get-started scrollto" style=" background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);color: black; overflow: hidden;" id="button-anon-pen" >REGISTER</a>
+                <a href="#featured-services" class="btn-get-started scrollto" style="color: black;" id="button-anon-pen" onclick="register()">REGISTER </a>
               </div>
             </div>
           </div>
@@ -232,7 +232,7 @@ video{
                   attempt to provide them an all-in-one mentoring session by professionals and students adept in their
                   respective fields. The amount of approbation received, great turnout and feedback from students
                   confirmed the success of this session. </p>
-                  <a href="#featured-services" class="btn-get-started scrollto" style=" background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);color: black; overflow: hidden;" id="button-anon-pen" >REGISTER</a>
+                  <a href="#featured-services" class="btn-get-started scrollto" style=" color: black" id="button-anon-pen" onclick="register()" >REGISTER</a>
               </div>
             </div>
           </div>
@@ -321,6 +321,9 @@ video{
               <h2 class="title"><a href="#">Our Mission</a></h2>
               <p>
                 Advancing Technology for Humanity and ensuring a true bond of commitment towards a better future.
+                <br>
+                <br>
+                <br>
               </p>
             </div>
           </div>
@@ -335,6 +338,8 @@ video{
               <p>
                 Creating a platform where students would get a chance to interact with researchers and industrial people
                 in the respective fields of their interest
+                <br>
+                <br>
               </p>
             </div>
           </div>
@@ -361,8 +366,8 @@ video{
 
     <section id="featured-services">
       <div class="container">
-        <h1 style="text-align: center;color: lightskyblue;padding-top: 47px;">ABOUT THE EVENT</h1>
-        <p style="color: aquamarine;">ElevateX is an all-in-one mentoring session by IEEE JU SB members. Be it research
+        <h1 style="text-align: center; COLOR:BLACK; padding-top: 47px;"><strong>ABOUT THE EVENT</strong></h1>
+        <p style="color:darkblue;">ElevateX is an all-in-one mentoring session by IEEE JU SB members. Be it research
           or industry, be it competitive coding, electronics or soft skill development, we have tracks tailor-made for
           your needs, complete with doubt-clearing, quick contests, real-world problems and webinars by field experts.
           While you’re stuck in the middle of a pandemic, locked up at home, this is our way of helping you engage
@@ -418,13 +423,13 @@ video{
     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <!-- <section id="services">
       <div class="container">
 
         <header class="section-header wow fadeInUp">
           <h3>Tracks</h3>
-          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p> -->
-        </header>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p> -->
+        <!-- </header>
 
         <div class="row">
 
@@ -474,18 +479,18 @@ video{
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section>#services --> 
 
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeIn">
+    <!-- <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
         <h3 style="color: rgb(3, 45, 87);">HURRY UP GUYS !!!</h3>
         <p style="color: black;"> <b> Register now for ElevateX to learn and experience more.</b></p>
         <a class="cta-btn" href="#">REGISTER NOW!!!</a>
       </div>
-    </section><!-- #call-to-action -->
+    </section>#call-to-action -->
 
     <!--==========================
       Skills Section
@@ -578,19 +583,19 @@ video{
       <div class="container">
 
         <header class="section-header">
-          <h3 class="section-title">Our Portfolio</h3>
+          <h3 class="section-title"><STRONG>WEBINARS SESSIONS TESTS</STRONG></h3>
         </header>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <!-- <li data-filter=".filter-app">App</li>
+               <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-web">Web</li> -->
-            </ul>
+            <!-- </ul>
           </div>
-        </div>
+        </div> --> -->
 
         <div class="row portfolio-container">
 
@@ -1018,8 +1023,8 @@ video{
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Event</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Tracks</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Register</a></li>
+              <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Tracks</a></li> -->
+              <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Register</a></li> -->
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact Us</a></li>
             </ul>
           </div>
@@ -1033,16 +1038,17 @@ video{
               <strong>Phone:</strong> (+91) 8479808755<br>
               <strong>Email:</strong> jaduniv.ieee@gmail.com<br>
             </p>
+            <div class="social-links">
+              <!-- <h2>CONNECT US AT:-</h2> -->
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
           </div>
 
-          <div class="social-links">
-            <h2>CONNECT US AT:-</h2>
-            <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-          </div>
+          
 
 
 
@@ -1096,7 +1102,12 @@ video{
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+  <script>
+    function register()
+    {
+      alert("Registration is closed!");
+    }
+  </script>
 </body>
 
 </html>
