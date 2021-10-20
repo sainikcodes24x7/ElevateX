@@ -1385,7 +1385,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  border-left: 4px solid #1597e5;
+  /* border-left: 4px solid #1597e5; */
 }
 
 #footer .footer-top .footer-info p {
